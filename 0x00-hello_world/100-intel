@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S _masn=intel $SCFILE
+gcc -S -masn=intel $SCFILE
