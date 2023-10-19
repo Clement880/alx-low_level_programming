@@ -1,5 +1,5 @@
-#1fndef MAIN_H
-#Define MAIN_H
+#lfndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
