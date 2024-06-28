@@ -1,19 +1,18 @@
 #include <stdio.h>
 /**
- * 
  * main - script prints the lowercase alphabet in reverse
  *
- * Return (0)
+ * Return: everytime(0) on success
  *
  */
 int main(void)
 {
-	char c = 'z';
+	char i = 'z';
 
-	while (c >= 'a')
+	while (i >= 'a')
 	{
-		putchar(c);
-		c++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
