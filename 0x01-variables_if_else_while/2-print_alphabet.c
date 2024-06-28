@@ -2,7 +2,7 @@
 /**
  * main - Entry start point
  *
- * Return: Everytime (0) when (successful)
+ * Return: Everytime (0) on success
  *
  */
 int main(void)
