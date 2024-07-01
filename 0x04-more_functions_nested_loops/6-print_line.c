@@ -1,3 +1,4 @@
+#include <stdio>
 #include "main.h"
 
 /**
@@ -6,7 +7,7 @@
  * @n: print integer
  *
  */
-void print_line(int n);
+void print_line(int n)
 {
 	int t;
 
