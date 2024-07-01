@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit _check if the parameter is a number or character
+ * _isdigit _check if the parameter is a digit or character
  *
  * @c: parameter
  *
