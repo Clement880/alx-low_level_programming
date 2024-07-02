@@ -1,29 +1,24 @@
 #include "main.h"
 /**
- * print_diagonal - a code that prints diagonal lines
- *
- * @n: number of inputs
- *
- * Ruturn: empty
+ * print_diagonal - print diagonal lines
+ * @n: no of inputs
+ * Return: (0)
  */
 void print_diagonal(int n)
 {
 	int e, t;
-
-	if (n <= 0)
+	
+	if (n <=0)
+		return;
+	
+	for (e = 0; e < n; e++)
 	{
-	_putchar('\n')
-	}
-	else
-	{
-	for (e = 0; e < n e++)
-	{
-	for (t = 0; t < e; y++)
-	{
-	_putchar(32);
-	}
-	_putchar(92);
-	_putchar('\n);
-	}
+		if (n > 1)
+			for (t = 0; t < e; t++)
+			{
+				_putchar(' ');
+			}
+		_putchar('\\');
+		_putchar('\n');
 	}
 }
