@@ -7,15 +7,15 @@
  * Return: void
  *
  */
-void print_array(int *a int n)
+void print_array(int *a, int n)
 
 {
-	int index_of_array;
+	int t;
 
-	for (index_of_array = 0; t < index_of_array < n; index_of_array++)
+	for (t = 0; t < n; t++)
 	{
-		printf("%d", *a[index_of_array]);
-	if (index_of_array != (n - 1))
+		printf("%d", a[t]);
+	if (t != (n - 1))
 	{
 		printf(", ");
 	}
