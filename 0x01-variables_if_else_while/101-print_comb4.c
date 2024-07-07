@@ -1,42 +1,36 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
- *
  * Return: always (0) on success
  *
  */
 int main(void)
 {
-	int e = '0';
-	int m;
-	int z;
+	int t, c, z;
 
-	while (e <= '7')
+	for (t = '0'; t < '9'; t++)
 	{
-		m = e + 1;
-		while (m <= '8')
-			z = m +1;
-		{
-			while (z <= '9')
-			{
-				putchar(e);
-				putchar(m);
-				putchar(z);
-				if (!(e == '7' && m == '8' && z == '9'))
-				{
-				putchar(',');
-				putchar(' ');
-				}
 
-				z++;
-			}
-			m++;
-		}
-		e++;
+	for (c = t + 1; c <= '9'; c++)
+	{
+
+	for (z = t + 1; z <= '9'; z++)
+	{
+	if ((c != t) != z)
+	{
+	putchar(t);
+	putchar(c);
+	putchar(z);
+	if (t == '7' && c == '8')
+	continue;
+	putchar(',');
+	putchar(' ');
 	}
-
-	putchar ('\n');
-
+	}
+	}
+	}
+	putchar('\n');
 	return (0);
 }
