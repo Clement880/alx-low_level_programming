@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - program that prints all possible combinations of two two-digit numbers
+ * Retun: (0) everytime on success
+ *
+ */
 
 int main(void)
 {
