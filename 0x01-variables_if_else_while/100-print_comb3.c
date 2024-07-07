@@ -10,15 +10,16 @@ int main(void)
 	int t = '0';
 	int j;
 
-	while (t <= '9')
+	while (t <= '8')
 	{
-		j = '0';
+		j = t + 1;
 		while (j <= '9')
 		{
-			if (t < j)
+			putchar(t);
+			putchar(j);
+
+			if (!(t == '8' && j == '9'))
 			{
-				putchar(t);
-				putchar(j);
 				if (t != '8' || (t == '8' && j != '9'))
 				putchar(',');
 				putchar(' ');
