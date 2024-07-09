@@ -16,7 +16,7 @@ int main(void)
 	}
 	t++;
 	}
-	printf("%d\n",v);
+	printf("%d\n", v);
 
 	return (0);
 }
