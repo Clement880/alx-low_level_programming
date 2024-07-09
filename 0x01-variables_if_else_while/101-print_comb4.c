@@ -10,24 +10,20 @@ int main(void)
 {
 	int t, c, z;
 
-	for (t = '0'; t < '9'; t++)
+	for (t = '0'; t < '7'; t++)
 	{
 
-	for (c = t + 1; c <= '9'; c++)
+	for (c = t + 1; c <= '8'; c++)
 	{
 
 	for (z = t + 1; z <= '9'; z++)
 	{
-	if ((c != t) != z)
-	{
 	putchar(t);
 	putchar(c);
 	putchar(z);
-	if (t == '7' && c == '8')
-	continue;
+	if (!(t == '7' && c == '8' && z == '9'))
 	putchar(',');
 	putchar(' ');
-	}
 	}
 	}
 	}
