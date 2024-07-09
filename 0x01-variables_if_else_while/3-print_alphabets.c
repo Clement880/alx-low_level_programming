@@ -13,7 +13,7 @@ int main(void)
 		putchar(lowerbet);
 		lowerbet++;
 	}
-	while (alphabet < 'Z')
+	while (alphabet <= 'Z')
 	{
 		putchar(alphabet);
 		alphabet++;
