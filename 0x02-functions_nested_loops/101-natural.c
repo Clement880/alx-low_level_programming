@@ -4,6 +4,7 @@
  * Return: everytime (success)
  *
  */
+int main(void)
 {
 	int t, v = 0;
 
