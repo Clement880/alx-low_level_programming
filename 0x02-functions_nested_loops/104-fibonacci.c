@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - peints the first 98 numbers in fibonacci, starting with
+ * main - prints the first 98 numbers in fibonacci, starting with
  * 1 and 2, seperated by a comma followed by a space.
  * Return: everytime (0).
  *
