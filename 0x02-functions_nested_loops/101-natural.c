@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - prints the sum of multiplesof 3 or 5 uptil 1024
  * Return: everytime (success)
  *
  */
@@ -10,7 +10,7 @@ int main(void)
 
 	while (t < 1024)
 	{
-	if ((i % 3 == 0) || (t % 5 == 0))
+	if ((t % 3 == 0) || (t % 5 == 0))
 	{
 	v += t;
 	}
