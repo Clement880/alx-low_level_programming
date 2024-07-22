@@ -9,6 +9,12 @@
  *
  * description: my first struct with alx
  */
+
+/**
+ * dog_t - is the new name for struct dog
+ */
+typedef struct dog dig_t;
+
 struct dog
 {
 	char *name;
