@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_dog - prints the declared struct for dog
+ * print_dog - prints the struct that is declared for dog d
  *@d: the new dog d of struct type
  */
 void print_dog(struct dog *d)
@@ -18,6 +18,6 @@ void print_dog(struct dog *d)
 		if (!(d->owner))
 			printf("Owner: (nil)\n");
 		else
-			printf("Owner:%s\n", d->owner);
+			printf("Owner: %s\n", d->owner);
 	}
 }
