@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - print out a file name of the source file it is compiled inn
+ * main - print out a file name of 
+ * the source file it is compiled inn
  *
  * Return: integer
  */
