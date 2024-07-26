@@ -7,12 +7,12 @@
  * @seperator: string printed between numbers
  * @n: number of arguments passed into function
  * 
- * Return (void)
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int t;
+	
 	va_list list;
 
 	va_start(list, n);
@@ -27,5 +27,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s%d", separator, va_arg(list, int));
 	}
 	va_end(list);
+	
 	printf("\n");
 }
