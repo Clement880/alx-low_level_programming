@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 /**
- * print_numbers - print parametersgiven as numbers
+ * print_numbers - print parameters given as numbers
  * @seperator: string printed between numbers
  * @n: number of arguments passed into function
+ * 
+ * Return (void)
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
