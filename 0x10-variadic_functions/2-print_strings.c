@@ -22,14 +22,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (vn = 0; vn < n; vn++)
 	{
 		str = va_arg(tf, char *);
-		if (!str)
-			str = "nil";
-		if (!separator)
-			printf("%s", str);
-		else if(separator && vn == 0)
-			printf("%s", str);
-		else
-			printf("%s%s", separator, str);
+	if (str == NULL)
+		printf("(nil)");
+	else
+		printf("%s", str);
+
+	if (vn != (n - 1) && separator != NULL)
+		printf("%s", separator);
 	}
 
 	printf("\n");
