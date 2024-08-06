@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all elements of a listint_t 
+ * print_listint - prints all elements of a listint_t
  *
  * @h: the head linker of node
  *
@@ -16,7 +16,7 @@ size_t print_listint(const listint_t *h)
 		return (0);
 	for (count = 0; h != NULL; count++)
 	{
-		printf("%d\n",h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
 	return (count);
