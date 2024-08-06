@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints alll elements of a listint_t 
+ * print_listint - prints all elements of a listint_t 
  *
  * @h: the head linker of node
  *
