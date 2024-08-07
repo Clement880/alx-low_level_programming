@@ -12,20 +12,20 @@
  */
 const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
-	const listint_t **n_list;
-	size_t t;
+	const listint_t **new_list;
+	size_t i;
 
-	n_list = malloc(size * sizeof(listint_t *));
-	if (n_list == NULL)
+	new_list = malloc(size * sizeof(listint_t *));
+	if (new_list == NULL)
 	{
 		free(list);
 		exit(98);
 	}
-	for (t = 0; t < size - 1; t++)
-		n_list[t] = list[t];
-	n_list[t] = new;
+	for (i = 0; i < size - 1; i++)
+		new_list[i] = list[i];
+	new_list[i] = new;
 	free(list);
-	return (n_list);
+	return (new_list);
 }
 
 /**
@@ -36,25 +36,25 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t t, nmb = 0;
+	size_t i, node_count = 0;
 	const listint_t **list = NULL;
 
 	while (head != NULL)
 	{
-		for (t = 0; t < nmb; t++)
+		for (i = 0; i < node_count; i++)
 		{
-			if (head == list[t])
+			if (head == list[i])
 			{
 				printf("->[%p] %d\n", (void *)head, head->n);
 				free(list);
-				return(nmb);
+				return(node_count);
 			}
 		}
-		nmb++;
-		list = _r(list, nmb, head);
+		node_count++;
+		list = _r(list, node_count, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
 	free(list);
-	return (nmb);
+	return (node_count);
 }
