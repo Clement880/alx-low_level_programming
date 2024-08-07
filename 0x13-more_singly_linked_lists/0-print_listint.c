@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all elements of a listint_t
+ * print_listint - prints all the elements in a listint_t
  *
  * @h: the head linker of node
  *
- * Return: number of node
+ * Return: the number of node
  */
 size_t print_listint(const listint_t *h)
 {
