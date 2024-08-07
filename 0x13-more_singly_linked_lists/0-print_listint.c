@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements in a listint_t
+ * print_listint - prints int data in a singly linked list
  *
- * @h: the head linker of node
+ * @h: head pointer to the list
  *
- * Return: the number of node
+ * Return: the number of node in list
  */
 size_t print_listint(const listint_t *h)
 {
