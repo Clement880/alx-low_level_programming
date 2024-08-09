@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
 /**
- * get_indianness - checks how bytes are ordered in memory
- * @num: two-byte integer
- * @ptr: Pointer to the first byte of num
- * Return: (ptr)
+ * get_indianness - Determines the endianness of the system.
+ *
+ * Return: 0 if big endian, 1 if little endian.
  */
 int get_endianness(void)
 {
