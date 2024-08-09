@@ -11,7 +11,7 @@ void print_bin(unsigned long int n)
 	print_bin(n >> 1);
 	if ((n & 1) == 1)
 		_putchar('1');
-	if ((n & 1) == 0)
+	else
 		_putchar('0');
 }
 /**
