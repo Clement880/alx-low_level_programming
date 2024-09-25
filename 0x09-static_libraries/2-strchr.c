@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 #include "main.h"
 /**
  * _strchr - main entry point
@@ -7,12 +11,5 @@
  */
 char *_strchr(char *s, char c)
 {
-	int t = 0;
-
-	for (; s[t] >= '\0'; t++)
-	{
-		if (s[t] == c)
-			return (&s[t]);
-	}
-	return (0);
+	 return strchr(s, c);
 }

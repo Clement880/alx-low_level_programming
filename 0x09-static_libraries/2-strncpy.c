@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 #include "main.h"
 /**
  * _strncpy - function copies a string
@@ -9,17 +13,5 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr = dest;
-	int i;
-
-	for (i = 0; i < n && *src != '\0'; i++)
-	{
-		*ptr++ = *src++;
-	}
-	for ( ; i < n; t++)
-	{
-		*ptr++ = '0\';
-	}
-
-	return dest;
+	 return strncpy(dest, src, n);
 }
